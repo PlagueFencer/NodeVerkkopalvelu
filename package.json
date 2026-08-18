@@ -1,0 +1,28 @@
+{
+  "name": "nodeverkkopalvelu",
+  "version": "1.0.0",
+  "description": "Example web app to demonstrate node.js capabilities and Express and handlebars frameworks",
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Handlebars",
+    "Bootstrap"
+  ],
+  "homepage": "https://github.com/PlagueFencer/NodeVerkkopalvelu#readme",
+  "bugs": {
+    "url": "https://github.com/PlagueFencer/NodeVerkkopalvelu/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlagueFencer/NodeVerkkopalvelu.git"
+  },
+  "author": "PlagueFencer",
+  "type": "commonjs",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
