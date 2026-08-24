@@ -9,6 +9,7 @@ const {engine} = require('express-handlebars');
 
 // APPLICATION SETTINGS
 // --------------------------------------------------------------
+const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || 8080;
 
 // create web app
@@ -52,13 +53,14 @@ app.get('/about', (req, res) => {
 
     // Render about page
     res.render('about', aboutInfo); // Render the 'about' template with the data
-});
+});source ~/.bashrc
 
 // RUN ENGINE AND LOG EVENTS
 // --------------------------
 
-app.listen(PORT)
-console.log('Started server on port', PORT)
+app.listen(PORT, HOST, () => {
+    console.log('Started server on port', PORT)
+})
 
 // node app.js // to run server
 // ctrl + c // to stop server
